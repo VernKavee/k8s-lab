@@ -2,7 +2,7 @@
 const http = require('http');
 
 // Access environment variables provided by Kubernetes
-const MESSAGE = process.env.APP_MESSAGE || "Default Hello";
+const MESSAGE = process.env.APP_MESSAGE || "Hello from the Automated Pipeline!";
 const API_KEY = process.env.API_KEY || "UNSET_KEY";
 
 const requestHandler = (request, response) => {
